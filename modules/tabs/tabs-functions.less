@@ -1,0 +1,36 @@
+.set-gradient (@start,@col1,@pos1,@col2,@pos2,@col3,@pos3,@col4,@pos4){
+	background-image: linear-gradient(@start, @col1 @pos1, @col2 @pos2, @col3 @pos3, @col4 @pos4);
+	background-image: -o-linear-gradient(@start, @col1 @pos1, @col2 @pos2, @col3 @pos3, @col4 @pos4);
+	background-image: -moz-linear-gradient(@start, @col1 @pos1, @col2 @pos2, @col3 @pos3, @col4 @pos4);
+	background-image: -webkit-linear-gradient(@start, @col1 @pos1, @col2 @pos2, @col3 @pos3, @col4 @pos4);
+	background-image: -ms-linear-gradient(@start, @col1 @pos1, @col2 @pos2, @col3 @pos3, @col4 @pos4);
+	background-image: -webkit-gradient(
+		linear,
+		left @start,
+		left top,
+		color-stop(@pos1, @col1),
+		color-stop(@pos2, @col2),
+		color-stop(@pos3, @col3),
+		color-stop(@pos4, @col4)
+	);
+}
+.set-A-B-C-B (@colour,@change:20%,@dir:top) {
+	.set-gradient(@dir,lighten(@colour,@change),0%,@colour,49%,darken(@colour,@change),51%,@colour,100%);
+}
+.set-shadow (@x:1px, @y:1px, @blur:5px, @colour:darken(@window-colour,80%)) {
+	box-shadow: @x @y @blur @colour;
+}
+.set-text-shadow (@colour:lighten(@window-colour,50%), @x:0, @y:0, @blur:2px){
+	text-shadow: @x @y @blur @colour;
+}
+.set-text-border (@colour:lighten(@window-colour,50%), @offset:2px){
+	text-shadow:
+	@offset @offset 0 @colour,
+	-@offset -@offset 0 @colour,
+	-@offset @offset 0 @colour,
+	@offset -@offset 0 @colour,
+	-@offset 0 0 @colour,
+	@offset 0 0 @colour,
+	0 -@offset 0 @colour,
+	0 @offset 0 @colour;
+}

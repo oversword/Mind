@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio - Cameron Brown</title>
+		<script type=text/javascript src=modules/jquery-1.7.js></script>
+		<script type=text/javascript src=modules/modules.js></script>
+		<link rel=stylesheet/less type=text/css href=modules/tabs/tabs.less />
+		<link rel=stylesheet type=text/css href=http://meyerweb.com/eric/tools/css/reset/reset.css />
+		<link rel=stylesheet type=text/css href=modules/modules.css />
+		<script type=text/javascript src=http://lesscss.googlecode.com/files/less-1.3.0.min.js></script>
+	</head>
+	<body id=body>
+		<script>
+		//alert(InterpretURL('http://www.boxcar2d.com/index.html'))
+		//alert(InterpretURL('file:///dos/Portfolio/Mind/Mind.html'))
+		//alert(InterpretURL('img:modules/tabs/components/default.png'))
+		//alert(InterpretURL('/Earth/search.html'))
+		//alert(InterpretURL('list=PLDCB07B37A117DBC6'))
+			FillPage('body')
+			var mainGrid = new Grid ('God','body')
+			var tabSizes = ['100%','100%',120,45]
+			var Earth = new Tabs(
+				'Earth','GodGrid-Cell_0-1',
+				{
+					'side':'tr',
+					'size':tabSizes
+				}
+			)
+			var Fire = new Tabs(
+				'Fire','GodGrid-Cell_1-1',
+				{
+					'size':tabSizes
+				}
+			)
+			var Water = new Tabs(
+				'Water','GodGrid-Cell_0-0',
+				{
+					'size':tabSizes,
+					'side':'br'
+				}
+			)
+			var Air = new Tabs(
+				'Air','GodGrid-Cell_1-0',
+				{
+					'size':tabSizes,
+					'side':'b'
+				}
+			)
+		</script>
+	</body>
+</html>

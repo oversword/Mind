@@ -1,0 +1,40 @@
+@import "tabs-colours.less";
+@import "tabs-functions";
+.Tabs {
+	//background: @bg-colour;
+	.Tabs-Action {
+		background-color:@bg-colour;
+		&:hover {
+			background-color:@high-colour;
+		}
+	}
+	.Tabs-Tab {
+		font-family: arial, sans-serif;
+		.set-A-B-C-B(@page-colour);
+		&.UpsideDown {
+			.set-A-B-C-B(@page-colour,20%,bottom);
+		}
+		color: @page-text-colour;
+		.set-text-border(@high-text-colour);
+		&:hover {
+			.set-A-B-C-B(@page-colour,30%);
+		&.UpsideDown {
+			.set-A-B-C-B(@page-colour,30%,bottom);
+		}
+			color: @high-text-colour;
+			.set-text-border(@high-colour,1px);
+		}
+		&.selected {
+			.set-A-B-C-B(@high-colour);
+			&.UpsideDown {
+				.set-A-B-C-B(@high-colour,20%,bottom);
+			}
+			color: @high-text-colour;
+			.set-text-border(@page-text-colour,1px);
+			font-weight: bold;
+		}
+	}
+	.Tabs-Contents {
+		background: @page-colour;
+	}
+}

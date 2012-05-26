@@ -1,0 +1,171 @@
+.linkwrapper {
+	width:400px;
+	height: 100px;
+	margin: 100px auto;
+	background: #77f;
+}
+.linktest {
+	width:400px;
+	height: 100px;
+	float: left;
+	background: #aaf;
+	border: 2px solid #000;
+}
+.my_link {
+	overflow: hidden;
+}
+.my_link_icon {
+	background: #44a;
+	float:left;
+}
+.my_link_icon_img {
+	width:100%;
+	height:100%;
+}
+.my_link_name_wrap {
+	float:left;
+	overflow: hidden;
+}
+.my_link_name {
+	background: #ddf;
+	width:100%;
+	height: 100%;
+}
+/********** FORMS **********/
+.my_form {
+	overflow: hidden;
+}
+/********** TABS ***********/
+.my_tabswrap {
+	overflow: hidden;
+}
+.my_tabslimit {
+	background: #00f;
+}
+.my_tabswrap-inner {
+}
+.my_tabs-tab {
+	overflow: hidden;
+	float:left;
+}
+.my_tabs-tab.selected {
+	background: #ddf;
+}
+.my_tabs-page {
+	float:left;
+}
+.my_tabs-tab-icon {
+	float:left;
+}
+my_tabs-tab-iconstuff {
+	float:left;
+}
+.my_tabs-tab-label {
+	float:left;
+}
+.my_tabscont-wrap {
+	overflow: hidden;
+}
+/************* NTABS ****************/
+.Tabs {
+	float: left;
+	/*overflow: hidden;*/
+}
+	.Tabs-Bar {
+	}
+		.Tabs-Bar-Actions {
+			float: left;
+			overflow: hidden;
+		}
+		.Tabs-Bar-Tabs {
+			float:left;
+			/*overflow: hidden;*/
+		}
+		.Tabs-Helper {
+			background: #44f;
+			width:10px;
+			height:100%;
+			float:left;
+		}
+		.Tabs-Helper-Right {
+			background: #44f;
+			width:10px;
+			height:100%;
+			float:right;
+		}
+			.Tabs-Bar-Tabs-Scroll {
+				overflow: auto;
+			}
+				.Tabs-Bar-Tabs-Scroll-Wrapper {
+				}
+					.Tabs-Tab {
+						overflow: hidden;
+					}
+					.Tabs-Tab.selected {
+						background: #ddd;				
+					}
+						.Tabs-Tab-Icon {
+						}
+							.Tabs-Tab-Icon-Wrapper {
+								overflow: hidden;
+							}
+						.Tabs-Tab-Label {
+						}
+							.Tabs-Tab-Label-Wrapper {
+							}
+	.Tabs-Contents {
+		/*overflow: hidden;*/
+	}
+		.Tabs-Contents-Wrapper {
+		}
+			.Tabs-Content {
+			}
+/*************** GRID *********************/
+.Grid-Column {
+	float:left;
+}
+.Grid-Cell {
+	/*background: #ddf;*/
+}
+.Grid-Mover img{
+	opacity:0.2;
+}
+/**************** YtPl ****************************/
+.YtPl {
+}
+.YtPl-Video {
+	float:left;
+}
+.YtPl-Playlist {
+	float:left;
+}
+#earthPlaylist,#waterPlaylist,#airPlaylist,#firePlaylist {
+	/*height: 100%;
+	width: 100%;*/
+	background: #000;
+}
+.YtPl-Playlist-Scroll a {
+	display: block;
+}
+.YtPl-Playlist-Scroll a.selected {
+	background: #4f4;
+}
+.YtPl-Playlist-Scroll a.selected:hover {
+	background: #484;
+}
+.YtPl-Playlist-Scroll a:hover {
+	background: #44f;
+}
+.YtPl-Playlist-Actions {
+	overflow: hidden;
+}
+.YtPl-Playlist-Actions-Wrapper-Input {
+}
+.YtPl-Playlist-Actions-Wrapper-Actions {
+}
+/********* SLIDER *****************/
+.Slider-Container {
+}
+.Slider-Wrapper div:hover {
+	background-color: #99f; 
+}
